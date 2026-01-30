@@ -1,7 +1,8 @@
-/* server ko start karna */
+// server start ye karega
 
-const app = require('./src/app');
+const app = require("./src/app");
 
 app.listen(3000, () => {
-    console.log("server is ruunig on port 3000")
+    console.log("server running on port 3000");
+    
 })
