@@ -21,14 +21,27 @@ html{
   padding: 1rem;
   border-radius: 0.7rem;
   max-width: 20rem;
+  min-width: 15rem; /* ✅ added */
   color: rgb(255, 248, 236);
+}
 
+.note p{
+  word-wrap: break-word; /* ✅ added */
 }
 
 .notes{
   display: flex;
-  flex-direction: row-reverse;
+  flex-wrap: wrap;
   gap: 1rem;
   padding-block: 1rem;
-  padding-inline: 3rem ;
+  padding-inline: 3rem;
+  justify-content: flex-start; /* ✅ added */
+  /* flex-direction: row-reverse; ❌ removed */
+}
+
+.note-create-form{
+  display: flex;
+  gap: 1rem;
+  padding-inline: 3rem;
+  padding-block: 1rem;
 }
